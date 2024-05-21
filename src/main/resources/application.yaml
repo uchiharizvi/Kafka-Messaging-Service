@@ -1,0 +1,9 @@
+#kafka configuration
+spring:
+  kafka:
+    producer:
+      bootstrap-servers: localhost:9092 #replace with windows desktop kafka ipv4
+      key-serializer: org.apache.kafka.common.serialization.StringSerializer
+      value-serializer: org.springframework.kafka.support.serializer.JsonSerializer
+    topic:
+      name : sampleEvents
